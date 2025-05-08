@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation Billets - Transport Burkina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Réservez votre billet de voyage</h1>
+    <p>Bobo-Dioulasso ⇄ Ouagadougou avec les meilleures compagnies</p>
+  </header>
+
+  <section class="compagnies">
+    <h2>Top 10 des compagnies de transport routier</h2>
+    <div class="cards">
+      <!-- Une carte par compagnie -->
+      <div class="card">
+        <h3>TSR</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 8 000 FCFA | Ouaga-Bobo : 8 000 FCFA</p>
+        <p><strong>Durée :</strong> 5h</p>
+        <p><strong>Escales :</strong> Houndé, Boromo</p>
+        <p><strong>Menu :</strong> Jus local, sandwich poulet</p>
+      </div>
+
+      <div class="card">
+        <h3>Rakiéta</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 9 000 FCFA | Ouaga-Bobo : 9 000 FCFA</p>
+        <p><strong>Durée :</strong> 4h45</p>
+        <p><strong>Escales :</strong> Dédougou, Koudougou</p>
+        <p><strong>Menu :</strong> Riz au gras, boisson sucrée</p>
+      </div>
+
+      <div class="card">
+        <h3>Sonef</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 7 500 FCFA | Ouaga-Bobo : 7 500 FCFA</p>
+        <p><strong>Durée :</strong> 5h30</p>
+        <p><strong>Escales :</strong> Houndé uniquement</p>
+        <p><strong>Menu :</strong> Café et biscuits</p>
+      </div>
+
+      <div class="card">
+        <h3>STS</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 8 500 FCFA | Ouaga-Bobo : 8 500 FCFA</p>
+        <p><strong>Durée :</strong> 5h</p>
+        <p><strong>Escales :</strong> Boromo, Koudougou</p>
+        <p><strong>Menu :</strong> Sandwich au thon, jus</p>
+      </div>
+
+      <div class="card">
+        <h3>TCV</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 9 500 FCFA | Ouaga-Bobo : 9 500 FCFA</p>
+        <p><strong>Durée :</strong> 4h30</p>
+        <p><strong>Escales :</strong> Houndé, Koudougou</p>
+        <p><strong>Menu :</strong> Plat local, eau minérale</p>
+      </div>
+
+      <div class="card">
+        <h3>STAF</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 8 000 FCFA | Ouaga-Bobo : 8 000 FCFA</p>
+        <p><strong>Durée :</strong> 5h</p>
+        <p><strong>Escales :</strong> Boromo</p>
+        <p><strong>Menu :</strong> Jus de bissap, snack local</p>
+      </div>
+
+      <div class="card">
+        <h3>UTB</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 9 000 FCFA | Ouaga-Bobo : 9 000 FCFA</p>
+        <p><strong>Durée :</strong> 4h50</p>
+        <p><strong>Escales :</strong> Koudougou uniquement</p>
+        <p><strong>Menu :</strong> Sandwich œuf, eau</p>
+      </div>
+
+      <div class="card">
+        <h3>AFRICA TOURS</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 8 000 FCFA | Ouaga-Bobo : 8 000 FCFA</p>
+        <p><strong>Durée :</strong> 5h15</p>
+        <p><strong>Escales :</strong> Houndé, Réo</p>
+        <p><strong>Menu :</strong> Thé chaud, petits gâteaux</p>
+      </div>
+
+      <div class="card">
+        <h3>GHANA BUS</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 10 000 FCFA | Ouaga-Bobo : 10 000 FCFA</p>
+        <p><strong>Durée :</strong> 5h</p>
+        <p><strong>Escales :</strong> Boromo, Dédougou</p>
+        <p><strong>Menu :</strong> Repas africain complet</p>
+      </div>
+
+      <div class="card">
+        <h3>FasoTrans</h3>
+        <p><strong>Prix :</strong> Bobo-Ouaga : 7 000 FCFA | Ouaga-Bobo : 7 000 FCFA</p>
+        <p><strong>Durée :</strong> 6h</p>
+        <p><strong>Escales :</strong> Houndé, Boromo</p>
+        <p><strong>Menu :</strong> Pain-beurre, lait local</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Formulaire de réservation</h2>
+    <form id="formulaireReservation">
+      <label for="nom">Nom complet :</label>
+      <input type="text" id="nom" required>
+
+      <label for="compagnie">Choisissez la compagnie :</label>
+      <select id="compagnie" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="TSR">TSR</option>
+        <option value="Rakiéta">Rakiéta</option>
+        <option value="Sonef">Sonef</option>
+        <option value="STS">STS</option>
+        <option value="TCV">TCV</option>
+        <option value="STAF">STAF</option>
+        <option value="UTB">UTB</option>
+        <option value="AFRICA TOURS">AFRICA TOURS</option>
+        <option value="GHANA BUS">GHANA BUS</option>
+        <option value="FasoTrans">FasoTrans</option>
+      </select>
+
+      <label for="trajet">Trajet :</label>
+      <select id="trajet" required>
+        <option value="">-- Choisir un trajet --</option>
+        <option value="Bobo-Ouaga">Bobo-Dioulasso → Ouagadougou</option>
+        <option value="Ouaga-Bobo">Ouagadougou → Bobo-Dioulasso</option>
+      </select>
+
+      <label for="date">Date de départ :</label>
+      <input type="date" id="date" required>
+
+      <label for="paiement">Moyen de paiement :</label>
+      <select id="paiement" required>
+        <option value="">-- Choisir un moyen de paiement --</option>
+        <option>Orange Money</option>
+        <option>MTN Mobile Money</option>
+        <option>Moov Money</option>
+        <option>Carte bancaire</option>
+        <option>Espèces en agence</option>
+      </select>
+
+      <button type="submit">Réserver maintenant</button>
+    </form>
+    <div id="confirmation" class="confirmation"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
